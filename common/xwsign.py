@@ -1,0 +1,22 @@
+from Crypto.Hash import SHA
+from Crypto.Signature import PKCS1_v1_5
+from Crypto.PublicKey import RSA
+import base64
+
+def rsaSign(reqdata):
+    priKey="MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCnWgVTqfKeBsv0JGRu4Iqqng/zlwITJMPM4e+zQPCaEGuws1ppJYS2NAJCdW03ApLFAZv7YMd+CQ2KtyZTlT8fX5gKKeZvkaWhUmBM8Ucb3uhD+PMrFtCYg3ZBt8OQdeYyS5UL5kdIGdaHno1DSY+2ellnYV4Z4/1HNC4xOCycIU6u7ntiY9jHfB6/sAyw2CzFXvPnrGHrDmAul2sg+GyC0hEEbDRmsONXWbGRwrfp/CTeSr40a+CCWLXdv+1MYY3bW4RpF3eUOe+df2ae6ooIMqM53vuJ9bObBWwXbWlqRyz/2WxFSBM7r8Pbc2PSqVM5QXXc/GL8/79TwQsZdHjNAgMBAAECggEAD8iQugxMQpU3hSYthruMuHzB2mKCopWUFe21Mr3MM2ubDIZN357XPmv3TpdOnqKSfxwgvvuotP1blpqhdb6cvnPAnizHe/xLl8RyKq+S2lESrN586LJ1J/02GQqg2i4UcOfp/b5ROL6fGhldD1yPvlEZv4NSYbS7/YwxUxkONAdU0asJSedYvtkKKZnGJ6Dc/Vyf7XNtZuRFlvpSlUMp+k43X89m1Wl0xsrELerL+VMDG02SeFbg9+UTdJ8lTqQ5WLY7M6+NoBELQz+jjq4bIgcMlLHs11zdY5DvjU48kMCXAh39K5tHbPu+HpY7LsbdAGa1OzLP/j5iEyhHC5zMYQKBgQDqRb9Jfe7l3d6UzXEY/A9UhRQDVk29hh6otOwjGkJh9ErJBWA9zpoBAFNy92xc2qLozJo+NAiebP8jHtYkzz7T1o9qv/EMTHkQvmd7kvmWZfnDCM/5dNEmjGR7bV02vZMKJQAvdHav3uLWJvSMtyb1Tg+5DToqF0gI+ge8fW8X2QKBgQC232Up0YtUJvaV46tvEk3PVk0fcvRpu/ewtsNc6u48B+oTGvii2yxfM+FNMeJPIHRYWBIWo8OqLJ/inFio+qY6FWGz8YQiJzaQlKuz8tCc0U5YmieWd/n7/wA8fUIxo8BIBK4cPLD1BB6EKQdxoocOYvwoqns5o/kONyrSxsUkFQKBgH50HXee6UfchduONSEGVYQKvS279QR7E6t+1QNxlilngsKVC0jxbwFhWqnw0eYhAdRlNFClJ43USbd8WpzN3RzdcNZvOr6nvKWEETmLsPs0midjZ1dAbfC/0TEqbCkzFN5h8IKs+6+cwJZVuqUF65p3g1cgw6ean4Bw7aIZltCpAoGAK+DsWB1kTfvPXOW048DDlMVDWhFuHdSxOOCRfcENCrBndNAa6pCmU+2R2MDoaU4DPJNdO7ttnm54qpoTF/CUZAlvWQrRRpScHhLeJB5V+dqq7s2GRC9jdxiXiOwRLvH4mA8va60QVKn5XIKvu49g0o3jrSpCyPDUOJn6F3sEIIUCgYEA4ov3fHEgoR69OfndRtKuN5xpsjofTXUqJtfVLhDgbuA8fud0Im4El0rHdAphDlm0iOoUinn7qG8ECaUenD+gP8pUE5j0yEjTukls8EW08N6Pr9TldlrWRjKNm8mf5fCda2qKecqf0pPxyK66uud8Asg7TFEp+rKNRe7BtcsZiNI="
+    #对私钥进行处理
+    formatKey=RSA.importKey(base64.b64decode(priKey.encode('utf-8')))
+    #对请求进行处理
+    formatreq=SHA.new(reqdata.encode('utf-8'))
+    #私钥签名
+    pkKey=PKCS1_v1_5.new(formatKey)
+    #生成签名
+    initsign=pkKey.sign(formatreq)
+    #格式化sign
+    sign=base64.encodebytes(initsign).decode('utf-8')
+    return sign
+
+
+
+

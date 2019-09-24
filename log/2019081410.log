@@ -1,0 +1,10 @@
+2019-08-14 10:11:42,164 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 172.19.60.92:8001
+2019-08-14 10:11:43,065 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:393] - DEBUG: http://172.19.60.92:8001 "POST /bha-neo-app/lanmaotech//service HTTP/1.1" 200 None
+2019-08-14 10:19:08,352 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 172.19.60.92:8001
+2019-08-14 10:19:08,904 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:393] - DEBUG: http://172.19.60.92:8001 "POST /bha-neo-app/lanmaotech//service HTTP/1.1" 200 None
+2019-08-14 10:34:13,318 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 172.19.60.92:8001
+2019-08-14 10:34:13,850 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:393] - DEBUG: http://172.19.60.92:8001 "POST /bha-neo-app/lanmaotech//service HTTP/1.1" 200 None
+2019-08-14 10:34:39,954 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 172.19.60.92:8001
+2019-08-14 10:34:40,642 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:393] - DEBUG: http://172.19.60.92:8001 "POST /bha-neo-app/lanmaotech//service HTTP/1.1" 200 None
+2019-08-14 10:48:33,966 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 172.19.60.92:8001
+2019-08-14 10:48:34,415 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:393] - DEBUG: http://172.19.60.92:8001 "POST /bha-neo-app/lanmaotech//service HTTP/1.1" 200 None

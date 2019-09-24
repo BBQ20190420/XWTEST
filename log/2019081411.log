@@ -1,0 +1,8 @@
+2019-08-14 11:37:14,543 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 172.19.60.92:8001
+2019-08-14 11:37:15,273 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:393] - DEBUG: http://172.19.60.92:8001 "POST /bha-neo-app/lanmaotech//service HTTP/1.1" 200 None
+2019-08-14 11:38:54,454 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 172.19.60.92:8001
+2019-08-14 11:38:54,894 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:393] - DEBUG: http://172.19.60.92:8001 "POST /bha-neo-app/lanmaotech//service HTTP/1.1" 200 None
+2019-08-14 11:39:01,014 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 172.19.60.92:8001
+2019-08-14 11:39:01,502 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:393] - DEBUG: http://172.19.60.92:8001 "POST /bha-neo-app/lanmaotech//service HTTP/1.1" 200 None
+2019-08-14 11:39:55,652 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 172.19.60.92:8001
+2019-08-14 11:39:56,135 - /Users/bqq/PycharmProjects/qqcode516/venv/lib/python3.7/site-packages/urllib3/connectionpool.py[line:393] - DEBUG: http://172.19.60.92:8001 "POST /bha-neo-app/lanmaotech//service HTTP/1.1" 200 None
