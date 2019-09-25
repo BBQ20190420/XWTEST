@@ -1,9 +1,13 @@
 import os
 import unittest
-import BeautifulReport
 import time
 from xwtest.common.sendemail import sendEmail
 import BeautifulReport
+import os
+import sys
+current_path=os.path.abspath(os.path.dirname(__file__))
+rootpath=os.path.split(current_path)[0]
+sys.path.append(rootpath)
 
 #用例路径
 case_path=os.path.join(os.getcwd(),'testcase')
