@@ -7,5 +7,5 @@ def getScreen(driver,function_name):
     root_path = os.path.abspath(os.path.join(os.getcwd(), "../.."))
     srceen_path = os.path.join(root_path, 'snapshot')
     print(srceen_path)
-    nowtime = time.strftime("%H%M%S")
+    nowtime = time.strftime("%d%H%M%S",time.localtime(time.time()))
     driver.get_screenshot_as_file(srceen_path + "/" + f"{function_name}{nowtime}.png")

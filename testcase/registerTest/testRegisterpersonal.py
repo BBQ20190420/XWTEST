@@ -123,8 +123,6 @@ class registerPersonal(unittest.TestCase):
             self.thisdriver.find_element_by_id("isAgreeReg").click()
             self.thisdriver.find_element_by_id("nextButton").click()
 
-            resp = http.response()
-            self.assertEqual(resp['code'], "0")
 
 
             # time.sleep(3)
@@ -134,6 +132,10 @@ class registerPersonal(unittest.TestCase):
             function_name = sys._getframe().f_code.co_name
 
             getScreen(self.thisdriver,function_name)
+
+        finally:
+            resp = http.response()
+            self.assertEqual(resp['code'], "0")
 
 
 if __name__ == '__main__':
