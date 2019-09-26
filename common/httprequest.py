@@ -5,8 +5,7 @@ import json
 from xwtest.config import readconfig
 from selenium import webdriver
 
-from selenium.webdriver.chrome.options import Options
-import execjs
+#from selenium.webdriver.chrome.options import Options
 
 reqUrl=readconfig.requrl
 platformNo=readconfig.platformNo
