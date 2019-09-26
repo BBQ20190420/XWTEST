@@ -6,7 +6,10 @@ import BeautifulReport
 import os
 import sys
 current_path=os.path.abspath(os.path.dirname(__file__))
+print(current_path)
 rootpath=os.path.split(current_path)[0]
+print(rootpath)
+sys.path.append(current_path)
 sys.path.append(rootpath)
 
 #用例路径
